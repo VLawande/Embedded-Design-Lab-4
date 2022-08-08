@@ -26,6 +26,7 @@ ________________________________________________________________________________
 The VGA Interfacing Bonus script is an unfinished script that when fully completed would display (in addition to everything on the Basic VGA Interfacing script) an orange hexagon and an orange circle on the screen. These shapes would then travel from the top of the screen to the bottom and back until switch 0 on the De1SoC was flipped. Upon the switch being flipped the shapes would stop in place and the Finalize() script would be run. The direction that the shapes should be travelling in was determined by a conditionial which would determine if the top pixel of either shape had collided with the top/bottom of the screen.
 
 New Functions:
+
 video_circle():
     The video_circle() function is identical to the video_box() function except it takes in a radius of the circle instead of left and right bounds. The function works by iterating through each pixel on a square that is the same width and height as the circles diameter using 2 for loops. A conditional is then used to determine if the current pixel needs to be a certain color or if it should stay empty.
 
