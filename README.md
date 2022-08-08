@@ -1,6 +1,6 @@
-The purpose of this experiment was to use memory mapping to interface the DE1SoC board to a Monitor using the VGA display port
+The purpose of this experiment was to use memory mapping to interface the DE1SoC board to a Monitor using the VGA display port.
 
-The Basic VGA Interfacing script is based on a section of code provided to us in the DE1SoC data sheet, and displays my class section and my name surrounded in a green box with a blue outline.
+The Basic VGA Interfacing script is based on a section of code provided to us in the DE1SoC data sheet, and displays my class section and my name surrounded in a green box with a blue outline. Both this script and the unfinished bonus script need a makefile to be able to map to the pixels on whatever display is being displayed to, but this is a linux distinction, and is not strictly required in c++
 
 The code consists 7 functions: Initialize(), Finalize(), video_text(), video_box(), resample_rgb(), get_data_bits(), and video_circle().
 
@@ -21,7 +21,7 @@ resample_rgb():
 
 get_data_bits():
     The get_data_bits() function gets the number of data bits from the taken in mode.
-________________________________________________________________________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________
 
 The VGA Interfacing Bonus script is an unfinished script that when fully completed would display (in addition to everything on the Basic VGA Interfacing script) an orange hexagon and an orange circle on the screen. These shapes would then travel from the top of the screen to the bottom and back until switch 0 on the De1SoC was flipped. Upon the switch being flipped the shapes would stop in place and the Finalize() script would be run. The direction that the shapes should be travelling in was determined by a conditionial which would determine if the top pixel of either shape had collided with the top/bottom of the screen.
 
