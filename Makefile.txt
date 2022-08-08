@@ -1,0 +1,11 @@
+Assignment44: Assignment4.o address_map_arm.o
+	g++ Assignment4.o address_map_arm.o -o Assignment44
+
+address_map_arm.o: address_map_arm.h
+	g++ -g -Wall -c address_map_arm.h
+
+Assignment4.o: Assignment4.cpp address_map_arm.h
+	g++ -g -Wall -c Assignment4.cpp
+
+clean:
+	rm Assignment4.o address_map_arm.o
